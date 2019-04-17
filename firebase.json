@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "target" : "api-3",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/renderfooter",
+        "function": "renderFooter"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
